@@ -7,7 +7,7 @@
     "footer footer";
 
   grid-template-columns: 1fr 20rem;
-  grid-template-rows: 1fr auto 1fr;
+  grid-template-rows: 4rem auto 4rem;
   grid-gap: 10px;
 
   height: 100vh;
@@ -55,6 +55,7 @@ footer {
 }
 
 button {
+  outline: none;
   display: inline-block;
   width: 100%;
   border: none;
@@ -68,24 +69,14 @@ button {
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
-  transition: background 250ms ease-in-out, transform 150ms ease;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
-button:hover,
-button:focus {
+button:hover {
   background: #0053ba;
 }
 
-button:focus {
-  outline: 1px solid #fff;
-  outline-offset: -4px;
-}
-
-button:active {
-  transform: scale(0.99);
-}
 .save-button {
   background-color: #b74f68;
   border-radius: 0%;
@@ -176,12 +167,18 @@ div.card-tags > ul > li {
   padding-right: 0.2rem;
 }
 
-div.saved-list > ul > li > a,
-div.saved-list > ul > li > i {
+div.saved-list > ul > li {
   text-decoration: none;
-  float: left;
+  width: 100%;
+  display: flex;
 }
 
 h4 {
   text-align: center;
+}
+
+img {
+  width: 22rem;
+  height: 22rem;
+  object-fit: cover;
 }
